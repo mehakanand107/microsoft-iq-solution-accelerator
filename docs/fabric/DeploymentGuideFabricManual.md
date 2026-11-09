@@ -43,7 +43,8 @@ Download [`fabric_solution_installer.ipynb`](../../infra/fabric/deploy/fabric_so
 
 1. In your workspace, **+ New item** → **Import notebook** → upload the `.ipynb` file you just downloaded.
 2. Open the notebook. In the first configuration cell, optionally edit:
-   - `GITHUB_BRANCH` — defaults to `"main"`. Change it to deploy from a fork or feature branch.
+   - `GITHUB_OWNER` and `GITHUB_REPO` — default to `mehakanand107/microsoft-iq-solution-accelerator` in this fork. Change both when using another source repository.
+   - `GITHUB_BRANCH` — defaults to `"main"`. Change it to deploy a published feature branch; uncommitted local changes are not downloaded by Fabric.
    - `GITHUB_TOKEN` — paste your PAT here if your fork is private.
 3. Click **Run all**.
 

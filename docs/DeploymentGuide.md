@@ -206,6 +206,8 @@ azd env get-values
 
 The entire deployment typically completes in **10–15 minutes**.
 
+When deploying this fork, the installer notebook uses `mehakanand107/microsoft-iq-solution-accelerator` as its source. The deployment script sets `GITHUB_BRANCH` to the checked-out branch, so commit and push that branch before running `azd up`; uncommitted changes are not downloaded by Fabric. If using another fork, update `GITHUB_OWNER` and `GITHUB_REPO` in the [installer notebook](../infra/fabric/deploy/fabric_solution_installer.ipynb) first.
+
 ### Re-running Deployment
 
 The deployment is **idempotent** and safe to re-run:
